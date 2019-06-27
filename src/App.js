@@ -3,6 +3,7 @@ import './App.css';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { clickButton } from "./actions";
+import { Htag } from "./components/Htag";
 
 class App extends Component {
 
@@ -25,7 +26,8 @@ class App extends Component {
         <button onClick={() => clickButton(inputValue)}>
           Click me!
         </button>
-        <h1>{newValue}</h1>
+        <Htag variavel={newValue}/>
+        {/* <h1>{newValue}</h1> */}
       </div>
     );
   }
